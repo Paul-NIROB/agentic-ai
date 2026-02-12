@@ -1,5 +1,5 @@
-*.docx
-*.ipynb
-prompt.py
+.env
+virtual env/
 venv/
 __pycache__/
+*.pyc
