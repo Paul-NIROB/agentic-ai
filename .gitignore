@@ -1,10 +1,5 @@
-# Virtual environments
-virtual env/
+*.docx
+*.ipynb
+prompt.py
 venv/
-
-# Environment variables
-.env
-
-# Python cache
 __pycache__/
-*.pyc
