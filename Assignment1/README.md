@@ -2,53 +2,92 @@
 
 ## Objective
 
-Build a simple Retrieval Augmented Generation (RAG) system using LangChain and HuggingFace.
+Build a Retrieval-Augmented Generation (RAG) system that answers user queries based on custom documents.
+
+---
 
 ## Features
 
-* Loads text data from a file
-* Splits text into chunks
-* Converts text into embeddings
-* Stores embeddings using FAISS
-* Retrieves relevant context for user query
-* Generates answers using GPT-2
+* Document loading and preprocessing
+* Text chunking
+* Embedding generation
+* Vector database storage
+* Semantic search
+* Context-aware answer generation
 
-## How to Run
+---
 
-1. Create virtual environment
+## Project Workflow
+
+1. Load document (`sample.txt`)
+2. Split text into chunks
+3. Generate embeddings
+4. Store in vector database
+5. Retrieve relevant chunks
+6. Send context + query to LLM
+7. Generate final answer
+
+---
+
+## Tech Stack
+
+* Python
+* LangChain
+* OpenAI API
+* FAISS
+* Jupyter Notebook
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```
-python -m venv venv
-venv\Scripts\activate
+git clone https://github.com/Paul-NIROB/agentic-ai.git
+cd agentic-ai/Assignment1
 ```
 
-2. Install dependencies
+Install dependencies:
 
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
-3. Run the project
+Create a `.env` file:
+
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+Run the application:
 
 ```
 python app.py
 ```
 
-## Example
+---
 
-Ask:
+## Files Description
 
-```
-What is AI?
-```
+| File              | Description               |
+| ----------------- | ------------------------- |
+| app.py            | Main RAG application      |
+| RAG_Project.ipynb | Development notebook      |
+| sample.txt        | Sample knowledge document |
+| requirements.txt  | Dependencies              |
 
-The system retrieves relevant context and generates an answer.
+---
 
-## Tools Used
+## Future Improvements
 
-* Python
-* LangChain
-* FAISS
-* HuggingFace Transformers
-* Sentence Transformers
+* Add multi-document support
+* Add web interface (Streamlit)
+* Add memory (Agentic behavior)
+* Add multi-modal RAG
 
+---
+
+## Author
+
+**Nirob Paul**
